@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: bigutm-push
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: VAPID_PUBLIC
+        value: BDm_AABF01xcVAphGRFx8eIaZqvRYVgMsQ0ghF6nGuQOwSrMt_uhnR7S-PqpDLrR_aLbCDebfsJI4OxeYLTSFfE
+      - key: VAPID_PRIVATE
+        value: j-PInRUgDL_J_KtgLAZWZbEnCujzbBEeH5zIMkjc7uw
+      - key: VAPID_EMAIL
+        value: mailto:admin@bigutm.com
+      - key: UMBRELLA_KEY
+        sync: false
